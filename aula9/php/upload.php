@@ -1,12 +1,17 @@
 <?php
 
-
     $arquivo = $_FILES["arquivo"];
+    if (($arquivo["type"]) == "image/png") {
+        $novo ="../upload/".$arquivo["name"];
+        move_uploaded_file($arquivo["tmp_name"], $novo);
+        $mensagem = "Upload feito com sucesso";
+    }
 
-    //print_r($arquivo);
+    else{
+        $mensagem = "Somente é permitido imagem em PNG";
+    }
 
-    $novo ="../upload/" . $arquivo["name"];
-    move_uploaded_file($arquivo["tmp_name"], $novo);
-
-
+    $json = json_encode($mensagem);
+    echo $json;
+    
 ?>
