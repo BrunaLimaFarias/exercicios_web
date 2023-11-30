@@ -1,0 +1,54 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card{
+    width: 320px;
+    height: 480px;
+    border: solid 1px #000000;
+    border-radius: 2px;
+    margin: 8px;
+}
+
+.card-imagem{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-titulo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-desc{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-botao{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#aplicativos{
+    display: flex;
+    flex-wrap: wrap;
+}

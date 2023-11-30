@@ -13,5 +13,4 @@ async function upload(){
     var resposta = await promise.json();
     alert(resposta);
 
-
 }
